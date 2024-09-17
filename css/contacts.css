@@ -1,0 +1,253 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #101010;
+  color: #fff;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 90px;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f50057;
+}
+.nav-links a:active{
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px;
+}
+.active{
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* Hero Section Styling */
+.hero-section::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.hero-section {
+  background-image: url('back2.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+.hero-section .hero-content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-section .hero-content p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Contact Section Styling */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 100px 50px;
+  background-color: #101010;
+}
+
+.contact-form {
+  background-color: #1c1c1c;
+  padding: 50px;
+  border-radius: 5px;
+  width: 30%;
+  margin-right: 150px;
+}
+
+.contact-form h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  color: #000000;
+}
+.contact-form textarea {
+  padding: 35px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: #202020;
+  }
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f50057;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color,color 0.3s ease;
+  margin-top: 30px;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.contact-form button:active{
+  background-color: cyan;
+}
+
+.contact-info {
+  width: 40%;
+}
+
+.contact-info p {
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.info-box {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 60px;
+}
+
+.info-box i {
+  font-size: 24px;
+  color: #f50057;
+  margin-right: 15px;
+}
+
+.info-box h3 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.info-box p {
+  color: #bbb;
+}
+
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Hire Us Section */
+.hire-us {
+  background-image: url('back1.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+}
+.hire-us::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.hire-content {
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.hire-content h3 {
+  font-size: 18px;
+}
+
+.hire-content h1 {
+  font-size: 42px;
+  margin: 20px 0;
+}
+
+.getstarted-btn {
+  padding: 15px 30px;
+  background-color: #f50057;
+  border: none;
+  color: #fff;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.getstarted-btn:hover {
+  background-color: #ff4081;
+}
+.getstarted-btn:active{
+  opacity: 0.7;
+}
+
