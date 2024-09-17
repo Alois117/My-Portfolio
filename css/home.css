@@ -67,10 +67,9 @@
     background-image: url('mypic5.png');
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    
+    height: 100vh;    
   }
-    .body-section .text-paragraph{
+  .body-section .text-paragraph{
     margin-right: 40%;
   }
   .body-section .text-paragraph p{
